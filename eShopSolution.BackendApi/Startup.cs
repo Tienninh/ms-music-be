@@ -1,11 +1,7 @@
 using System.Collections.Generic;
-using eShopSolution.Application.Catalog.Categories;
-using eShopSolution.Application.Catalog.Products;
+
 using eShopSolution.Application.Common;
-using eShopSolution.Application.System.Languages;
-using eShopSolution.Application.System.Roles;
-using eShopSolution.Application.System.Users;
-using eShopSolution.Application.Utilities.Slides;
+
 using eShopSolution.Data.EF;
 using eShopSolution.Data.Entities;
 using eShopSolution.Utilities.Constants;
@@ -37,7 +33,7 @@ namespace eShopSolution.BackendApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<EShopDbContext>(options =>
+          /*  services.AddDbContext<EShopDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString(SystemConstants.MainConnectionString)));
 
             services.AddIdentity<AppUser, AppRole>()
@@ -57,7 +53,7 @@ namespace eShopSolution.BackendApi
             services.AddTransient<ISlideService, SlideService>();
 
             services.AddTransient<IRoleService, RoleService>();
-            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IUserService, UserService>();*/
 
             //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
             //services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
